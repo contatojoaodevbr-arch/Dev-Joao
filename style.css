@@ -1,0 +1,56 @@
+/* ... Mantenha o reset e o body das mensagens anteriores ... */
+
+:root {
+    --bg: #0d1117;
+    --card: #161b22;
+    --border: #30363d;
+    --blue: #58a6ff;
+    --green: #238636;
+    --text: #c9d1d9;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; }
+body { background: var(--bg); color: var(--text); line-height: 1.6; scroll-behavior: smooth; }
+.container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
+
+/* Menu */
+.menu { display: flex; justify-content: space-between; padding: 20px 10%; background: var(--card); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 10; }
+.menu ul { display: flex; list-style: none; gap: 20px; }
+.menu a { color: var(--text); text-decoration: none; font-weight: bold; font-size: 0.9rem; }
+.logo span { color: var(--blue); }
+
+/* Hero */
+.cartao-principal { background: var(--card); padding: 60px 20px; border-radius: 12px; border: 1px solid var(--border); text-align: center; margin-bottom: 50px; }
+.tag { font-size: 0.7rem; background: #1f6feb; color: white; padding: 4px 12px; border-radius: 20px; text-transform: uppercase; }
+.cartao-principal h1 { font-size: 3rem; margin: 20px 0; color: white; }
+.cartao-principal h1 span { color: var(--blue); }
+.botoes { display: flex; gap: 15px; justify-content: center; margin-top: 30px; }
+
+/* Botões */
+.btn-contato { background: var(--green); color: white; padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: bold; }
+.btn-outline { border: 1px solid var(--border); color: var(--text); padding: 12px 24px; border-radius: 6px; text-decoration: none; }
+
+/* Grid */
+.titulo-secao { text-align: center; margin: 60px 0 30px; color: white; }
+.grade { display: flex; gap: 20px; flex-wrap: wrap; }
+.celula { 
+    background: var(--card); padding: 30px; border-radius: 12px; border: 1px solid var(--border); 
+    flex: 1; min-width: 280px; transition: 0.4s; opacity: 0; transform: translateY(20px); 
+}
+.celula:hover { border-color: var(--blue); }
+
+/* Processo */
+.passos { display: flex; gap: 30px; margin-top: 20px; flex-wrap: wrap; }
+.passo { flex: 1; min-width: 200px; }
+.passo span { font-size: 2rem; font-weight: bold; color: var(--border); display: block; }
+.passo h4 { color: var(--blue); margin-bottom: 10px; }
+
+/* FAQ */
+.faq { margin-top: 80px; }
+.pergunta { background: var(--card); padding: 20px; border-radius: 8px; margin-bottom: 10px; border-left: 4px solid var(--blue); }
+
+/* Footer */
+footer { background: #010409; padding: 60px 10% 20px; border-top: 1px solid var(--border); }
+.footer-grid { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 40px; }
+.social a { color: var(--blue); text-decoration: none; margin-left: 15px; }
+.copy { text-align: center; margin-top: 50px; font-size: 0.8rem; color: #8b949e; }
