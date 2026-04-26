@@ -1,3 +1,9 @@
+// Vercel Speed Insights
+import { injectSpeedInsights } from '@vercel/speed-insights';
+
+// Initialize Speed Insights
+injectSpeedInsights();
+
 // 1. Efeito de scroll suave para os links do menu (Integrado do original)
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
