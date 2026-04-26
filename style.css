@@ -100,11 +100,13 @@ body {
 }
 
 .hero-content {
-    display: grid;
-    grid-template-columns: 1.2fr 0.8fr;
-    gap: 2rem;
-    align-items: center;
+    display: flex;             /* Mudamos de Grid para Flex */
+    flex-direction: column;    /* Coloca os itens um embaixo do outro */
+    align-items: center;       /* Centraliza horizontalmente */
+    text-align: center;        /* Centraliza o texto */
+    gap: 1rem;
     z-index: 10;
+    width: 100%;               /* Garante que use todo o espaço */
 }
 
 .tag {
@@ -122,9 +124,10 @@ body {
 .hero-title {
     font-size: 3.5rem;
     font-weight: 800;
-    margin: 20px 0;
+    margin: 20px auto;       /* O 'auto' ajuda na centralização */
     line-height: 1.1;
     color: white;
+    max-width: 800px;        /* Evita que o título fique largo demais em telas gigantes */
 }
 
 .highlight {
@@ -140,6 +143,8 @@ body {
 .hero-buttons {
     display: flex;
     gap: 1rem;
+    justify-content: center; /* Garante que fiquem no meio */
+    width: 100%;
 }
 
 .btn {
