@@ -1,0 +1,28 @@
+{
+  "name": "dev-joao",
+  "version": "1.0.0",
+  "description": "Portfolio website with Vercel Speed Insights",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/contatojoaodevbr-arch/Dev-Joao.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/contatojoaodevbr-arch/Dev-Joao/issues"
+  },
+  "homepage": "https://github.com/contatojoaodevbr-arch/Dev-Joao#readme",
+  "dependencies": {
+    "@vercel/speed-insights": "^2.0.0"
+  },
+  "devDependencies": {
+    "vite": "^8.0.10"
+  }
+}
